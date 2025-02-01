@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.omegacat9999.chemistrymod.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

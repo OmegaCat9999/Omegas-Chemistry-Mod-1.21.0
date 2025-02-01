@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "omega-chemistry-mod",
+	"version": "${version}",
+	"name": "Omega's Chemistry Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Omega"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/omega-chemistry-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.omegacat9999.chemistrymod.OmegasChemistryMod"
+		],
+		"fabric-datagen": [
+			"net.omegacat9999.chemistrymod.OmegasChemistryModDataGenerator"
+		],
+		"client": [
+			"net.omegacat9999.chemistrymod.OmegasChemistryModClient"
+		]
+	},
+	"mixins": [
+		"omega-chemistry-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
