@@ -13,12 +13,12 @@ public class ModItems {
     // Define Items (please define in alphabetical order)
     // Element_ELEMENT Items
     public static final Item CARBON_ELEMENT = registerItem("carbon_element", new Item(new Item.Settings()));
-
+    public static final Item HYDROGEN_ELEMENT = registerItem("hydrogen_element", new Item(new Item.Settings()));
     // Element Items
-
-
+    public static final Item CARBON = registerItem("carbon", new Item(new Item.Settings()));
+    public static final Item HYDROGEN = registerItem("hydrogen", new Item(new Item.Settings()));
     // Compound Items
-
+    public static final Item METHANE = registerItem("compound_methane", new Item(new Item.Settings()));
     // Add Item(s) to Vanilla Item Group (unused, may remove.)
     /*
     private static void AddItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
@@ -41,6 +41,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
                 .register(entries -> {
             entries.add(CARBON_ELEMENT);
+            entries.add(HYDROGEN_ELEMENT);
         });
     }
 }
