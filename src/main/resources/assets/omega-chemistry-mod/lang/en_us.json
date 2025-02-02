@@ -1,3 +1,7 @@
 {
-  "item.omegachemistry.carbon_element": "Carbon"
+  "item.omegachemistry.carbon": "Solid Carbon",
+  "item.omegachemistry.carbon_element": "Carbon",
+  "item.omegachemistry.hydrogen": "Hydrogen Gas",
+  "item.omegachemistry.hydrogen_element": "Hydrogen",
+  "item.omegachemistry.compound_methane": "Methane"
 }
