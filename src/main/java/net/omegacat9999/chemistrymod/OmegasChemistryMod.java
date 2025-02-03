@@ -2,6 +2,7 @@ package net.omegacat9999.chemistrymod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.omegacat9999.chemistrymod.block.ModBlocks;
 import net.omegacat9999.chemistrymod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -21,5 +22,6 @@ public class OmegasChemistryMod implements ModInitializer {
 		// Proceed with mild caution.
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
