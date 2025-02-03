@@ -3,5 +3,9 @@
   "item.omegachemistry.carbon_element": "Carbon",
   "item.omegachemistry.hydrogen": "Hydrogen Gas",
   "item.omegachemistry.hydrogen_element": "Hydrogen",
-  "item.omegachemistry.compound_methane": "Methane"
+  "item.omegachemistry.compound_methane": "Methane",
+
+  "itemgroup.omegachemistry.elements": "Elements (states)",
+  "itemgroup.omegachemistry.elements_element": "Elements",
+  "itemgroup.omegachemistry.compounds": "Compounds"
 }
