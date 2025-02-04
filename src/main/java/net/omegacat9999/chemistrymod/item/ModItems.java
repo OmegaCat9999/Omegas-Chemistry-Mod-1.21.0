@@ -1,5 +1,6 @@
 package net.omegacat9999.chemistrymod.item;
 
+import com.sun.jna.platform.mac.Carbon;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -7,12 +8,13 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.omegacat9999.chemistrymod.OmegasChemistryMod;
+import net.omegacat9999.chemistrymod.item.custom.CarbonElementItem;
 
 public class ModItems {
 
     // Define Items (please define in alphabetical order)
     // Element_ELEMENT Items
-    public static final Item CARBON_ELEMENT = registerItem("carbon_element", new Item(new Item.Settings()));
+    public static final Item CARBON_ELEMENT = registerItem("carbon_element", new CarbonElementItem(new Item.Settings()));
     public static final Item HYDROGEN_ELEMENT = registerItem("hydrogen_element", new Item(new Item.Settings()));
     // Element Items
     public static final Item CARBON = registerItem("carbon", new Item(new Item.Settings()));
