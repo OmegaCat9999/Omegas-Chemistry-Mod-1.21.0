@@ -2,10 +2,7 @@ package net.omegacat9999.chemistrymod;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.omegacat9999.chemistrymod.datagen.ModBlockTagProvider;
-import net.omegacat9999.chemistrymod.datagen.ModItemTagProvider;
-import net.omegacat9999.chemistrymod.datagen.ModLootTableProvider;
-import net.omegacat9999.chemistrymod.datagen.ModModelProvider;
+import net.omegacat9999.chemistrymod.datagen.*;
 
 public class OmegasChemistryModDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -16,5 +13,6 @@ public class OmegasChemistryModDataGenerator implements DataGeneratorEntrypoint 
 		pack.addProvider(ModItemTagProvider::new);
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModRecipeProvider::new);
 	}
 }
