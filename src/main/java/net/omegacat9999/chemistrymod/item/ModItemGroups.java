@@ -35,6 +35,6 @@ public class ModItemGroups {
 
 
     public static void RegisterItemGroups() {
-        OmegasChemistryMod.LOGGER.info("Registering Mod Item Groups for" + OmegasChemistryMod.MOD_ID);
+        OmegasChemistryMod.LOGGER.info("Registering Mod Item Groups for: " + OmegasChemistryMod.MOD_ID);
     }
 }

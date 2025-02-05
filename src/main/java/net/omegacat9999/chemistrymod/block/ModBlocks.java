@@ -11,6 +11,8 @@ import net.minecraft.util.Identifier;
 import net.omegacat9999.chemistrymod.OmegasChemistryMod;
 
 public class ModBlocks {
+
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(OmegasChemistryMod.MOD_ID, name), block);
@@ -23,7 +25,7 @@ public class ModBlocks {
 
     public static void registerModBlocks() {
         // Log Block Register Indicator (Debugging)
-        OmegasChemistryMod.LOGGER.info("Registering Mod Items for" + OmegasChemistryMod.MOD_ID);
+        OmegasChemistryMod.LOGGER.info("Registering Mod Blocks for: " + OmegasChemistryMod.MOD_ID);
 
         // Call registerItem Method for INGREDIENTS Vanilla Item Group (directly)
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)

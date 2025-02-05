@@ -52,7 +52,7 @@ public class ModItems {
     public static void registerModItems() {
         // Log Item Register Indicator (Debugging)
         net.omegacat9999.chemistrymod.OmegasChemistryMod.LOGGER
-                .info("Registering Mod Items for" + net.omegacat9999.chemistrymod.OmegasChemistryMod.MOD_ID);
+                .info("Registering Mod Items for: " + net.omegacat9999.chemistrymod.OmegasChemistryMod.MOD_ID);
 
         // Call registerItem Method for INGREDIENTS Vanilla Item Group (directly)
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
