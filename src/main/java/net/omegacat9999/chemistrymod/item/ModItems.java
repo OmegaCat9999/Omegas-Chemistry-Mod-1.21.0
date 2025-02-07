@@ -1,36 +1,20 @@
 package net.omegacat9999.chemistrymod.item;
 
-import com.sun.jna.platform.mac.Carbon;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.omegacat9999.chemistrymod.OmegasChemistryMod;
-
-import java.util.List;
+import net.omegacat9999.chemistrymod.item.custom.Element_ElementItem;
 
 public class ModItems {
 
     // Define Items (please define in alphabetical order)
     // Element_ELEMENT Items
-    public static final Item CARBON_ELEMENT = registerItem("carbon_element", new Item(new Item.Settings()){
-        @Override
-        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
-            if(Screen.hasShiftDown()){
-                tooltip.add(Text.translatable("tooltip.omegachemistry.carbon_element.advanced"));
-            } else {
-                tooltip.add(Text.translatable("tooltip.omegachemistry.carbon_element.basic"));
-            }
-            super.appendTooltip(stack, context, tooltip, type);
-        }
-    });
-    public static final Item HYDROGEN_ELEMENT = registerItem("hydrogen_element", new Item(new Item.Settings()));
+    public static final Item CARBON_ELEMENT = registerItem("carbon_element", new Element_ElementItem(new Item.Settings()));
+    public static final Item HYDROGEN_ELEMENT = registerItem("hydrogen_element", new Element_ElementItem(new Item.Settings()));
     // Element Items
     public static final Item CARBON = registerItem("carbon", new Item(new Item.Settings()));
     public static final Item HYDROGEN = registerItem("hydrogen", new Item(new Item.Settings()));
