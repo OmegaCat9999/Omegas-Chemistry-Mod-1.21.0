@@ -13,12 +13,16 @@ public class Element_ElementItem extends Item {
         super(settings);
     }
 
+    public String getElement_ElementName() {
+        return this.getName().getString().toLowerCase() + "_element";
+    }
+
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         if(Screen.hasShiftDown()){
-            tooltip.add(Text.translatable("tooltip.omegachemistry." + this.getName() + ".advanced"));
+            tooltip.add(Text.translatable("tooltip.omegachemistry." + this.getElement_ElementName() + ".advanced"));
         } else {
-            tooltip.add(Text.translatable("tooltip.omegachemistry" + this.getName() + "basic"));
+            tooltip.add(Text.translatable("tooltip.omegachemistry" + this.getElement_ElementName() + ".basic"));
         }
         super.appendTooltip(stack, context, tooltip, type);
         this.getName();
