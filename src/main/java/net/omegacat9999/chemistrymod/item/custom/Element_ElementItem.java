@@ -8,7 +8,7 @@ import net.minecraft.text.Text;
 
 import java.util.List;
 
-public class Element_ElementItem extends Item {
+public class Element_ElementItem extends ModItem {
     public Element_ElementItem(Settings settings) {
         super(settings);
     }

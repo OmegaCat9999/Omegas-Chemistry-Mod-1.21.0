@@ -8,9 +8,9 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.omegacat9999.chemistrymod.OmegasChemistryMod;
 import net.omegacat9999.chemistrymod.item.custom.CompoundItem;
+import net.omegacat9999.chemistrymod.item.custom.CompoundItemArrayData;
 import net.omegacat9999.chemistrymod.item.custom.Element_ElementItem;
-
-import java.lang.reflect.Array;
+import net.omegacat9999.chemistrymod.item.custom.ModItem;
 
 public class ModItems {
     // Define Items (please define in alphabetical order)
@@ -21,7 +21,7 @@ public class ModItems {
     public static final Item CARBON = registerItem("carbon", new Item(new Item.Settings()));
     public static final Item HYDROGEN = registerItem("hydrogen", new Item(new Item.Settings()));
     // Compound Items
-    public static final Item METHANE = registerItem("compound_methane", new CompoundItem(new Item.Settings()).composition_init());
+    public static final Item METHANE = registerItem("compound_methane", new CompoundItem(new Item.Settings(), CompoundItemArrayData.METHANE_C_P, CompoundItemArrayData.METHANE_C_R));
     // Add Item(s) to Vanilla Item Group (unused, may remove.)
     /*
     private static void AddItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
