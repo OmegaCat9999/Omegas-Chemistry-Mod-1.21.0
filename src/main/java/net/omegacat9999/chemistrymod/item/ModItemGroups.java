@@ -31,6 +31,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.omegachemistry.compounds"))
                     .icon(() -> new ItemStack(ModItems.METHANE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.METHANE);
+                        entries.add(ModItems.ETHANE);
                     }).build());
 
 

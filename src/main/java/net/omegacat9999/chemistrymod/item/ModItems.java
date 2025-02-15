@@ -7,10 +7,10 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.omegacat9999.chemistrymod.OmegasChemistryMod;
-import net.omegacat9999.chemistrymod.item.custom.CompoundItem;
-import net.omegacat9999.chemistrymod.item.custom.CompoundItemArrayData;
-import net.omegacat9999.chemistrymod.item.custom.Element_ElementItem;
-import net.omegacat9999.chemistrymod.item.custom.ModItem;
+import net.omegacat9999.chemistrymod.item.custom.compounds.CompoundItem;
+import net.omegacat9999.chemistrymod.item.custom.compounds.CompoundItemArrayData;
+import net.omegacat9999.chemistrymod.item.custom.compounds.OrganicCompoundItem;
+import net.omegacat9999.chemistrymod.item.custom.element_element.Element_ElementItem;
 
 public class ModItems {
     // Define Items (please define in alphabetical order)
@@ -21,7 +21,10 @@ public class ModItems {
     public static final Item CARBON = registerItem("carbon", new Item(new Item.Settings()));
     public static final Item HYDROGEN = registerItem("hydrogen", new Item(new Item.Settings()));
     // Compound Items
-    public static final Item METHANE = registerItem("compound_methane", new CompoundItem(new Item.Settings(), CompoundItemArrayData.METHANE_C_P, CompoundItemArrayData.METHANE_C_R));
+    // Organic
+    public static final Item ETHANE = registerItem("compound_ethane", new OrganicCompoundItem(new Item.Settings(), CompoundItemArrayData.ETHANE_C_P, CompoundItemArrayData.ETHANE_C_R));
+    public static final Item METHANE = registerItem("compound_methane", new OrganicCompoundItem(new Item.Settings(), CompoundItemArrayData.METHANE_C_P, CompoundItemArrayData.METHANE_C_R));
+    // Inorganic
     // Add Item(s) to Vanilla Item Group (unused, may remove.)
     /*
     private static void AddItemsToIngredientItemGroup(FabricItemGroupEntries entries) {

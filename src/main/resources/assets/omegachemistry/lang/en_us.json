@@ -10,5 +10,7 @@
   "itemgroup.omegachemistry.compounds": "Compounds",
 
   "tooltip.omegachemistry.carbon_element.advanced": "",
-  "tooltip.omegachemistry.carbon_element.basic": ""
+  "tooltip.omegachemistry.carbon_element.basic": "",
+  "tooltip.omegachemistry.hydrogen_element.advanced": "",
+  "tooltip.omegachemistry.hydrogen_element.basic": ""
 }
